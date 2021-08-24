@@ -1,8 +1,10 @@
+import CartWidget from "./CartWidget"
+
 function NavBar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light barranav">
             <div className="container-fluid">
-            <a className="navbar-brand" href="/#">TiendaVirtual</a>
+            <a className="navbar-brand logo" href="/#">TiendaVirtual</a>
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item dropdown">
@@ -53,6 +55,7 @@ function NavBar() {
                             </ul>
                         </li>
                     </ul>
+                    <CartWidget />
                 </div>
             </div>
         </nav>
