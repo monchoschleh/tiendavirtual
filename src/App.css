@@ -48,6 +48,8 @@
 .barranav {
   z-index: 2;
   width: 100%;
+  background-color: rgba(255, 166, 0, 0.705);
+  position: fixed;
 }
  
 .logo {
@@ -57,4 +59,8 @@
 
 .texto {
 
+}
+
+.App2 {
+  padding-top: 55px;
 }
