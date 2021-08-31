@@ -18,7 +18,7 @@ export const ItemListContainer = () => {
 
 */
 
-import { ItemCount } from "./components/ItemCount"
+import { ItemCount } from "./ItemCount"
 
 export function AppAddd() {
   const onAdd = (count) => {
@@ -29,6 +29,7 @@ return (
   <div>
         <ItemCount initial={1} stock={10} onAdd={onAdd}/>
         <ItemCount initial={1} stock={5} onAdd={onAdd}/>
+        <ItemCount initial={1} stock={7} onAdd={onAdd}/>
   </div>
 ) 
 }
