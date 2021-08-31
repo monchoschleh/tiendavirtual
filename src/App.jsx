@@ -1,8 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import { ItemListContainer } from "./components/ItemListContainer";
-import { ItemCount } from "./components/ItemCount";
+import {AppAddd} from "./components/ItemListContainer"
 
 function App() {
   const onAdd = (count) => {
@@ -13,9 +12,7 @@ function App() {
     <div className="App">
       <NavBar />
       <div className="App2">
-        <ItemListContainer />
-        <ItemCount initial={1} stock={10} onAdd={onAdd}/>
-        <ItemCount initial={1} stock={5} onAdd={onAdd}/>
+        <AppAddd />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1>Hola loco</h1>

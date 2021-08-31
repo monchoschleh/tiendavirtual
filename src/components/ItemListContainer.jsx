@@ -1,3 +1,5 @@
+/*
+
 const ItemListCustom = ({greeting, greeting2, greeting3}) => {
   return (
     <p style={{backgroundColor: "#FF0000"}}>{greeting} , {greeting2}, {greeting3}</p>
@@ -13,3 +15,20 @@ export const ItemListContainer = () => {
     </div>
   );
 };
+
+*/
+
+import { ItemCount } from "./components/ItemCount"
+
+export function AppAddd() {
+  const onAdd = (count) => {
+    console.log (`La cantidad es: ${count}`)
+    alert (`La cantidad es ${count}`)
+}
+return (
+  <div>
+        <ItemCount initial={1} stock={10} onAdd={onAdd}/>
+        <ItemCount initial={1} stock={5} onAdd={onAdd}/>
+  </div>
+) 
+}
